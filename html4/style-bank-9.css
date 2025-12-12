@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 150vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home {
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 630px;
+    min-height: 630px;
+    max-height: 630px;
+    border: 10px solid #000;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.one {
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    height: 30px;
+    max-height: 30px;
+    min-inline-size: 30px;
+    background: #000;
+    margin: 0 auto;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.one_1 {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 8px;
+    min-height: 8px;
+    border-radius: 12px;
+    background: #808080;
+}
+
+.one__2 {
+    width: 8px;
+    max-width: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    max-height: 8px;
+    border-radius: 100%;
+    background: #808080;
+}
+
+.screen {
+    width: 100%;
+    min-height: 610px;
+    max-height: 610px;
+    position: absolute;
+    border-radius: 14px;
+    top: 0;
+    background-color: #fff;
+}
+
+.screen::-webkit-scrollbar {
+    width: 0;
+}
+
+.time {
+    width: 100%;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    background: #fff;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.time div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.time div > i {
+    rotate: -90deg;
+}
+
+.three {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.three > img {
+    width: 25px;
+}
+
+.sccren__home {
+    margin: 0 auto;
+    width: 100%;
+    height: 535px;
+    overflow-y: scroll;
+}
+
+.sccren__home::-webkit-scrollbar {
+    width: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 10px 0 10px;
+    color: #00c358;
+}
+
+.sccren__home > img {   
+    width:95%;
+	height: 35%;
+	margin-left: 1rem;
+	border-radius: 0.9rem;
+}
+
+.user {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px 0 9px;
+		
+}
+
+.title__benift {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container__benift {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 5px;
+}
+
+.container__benift > div > figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background: #04be4f;
+    border-radius: 10px 0 10px;
+}
+
+.container__benift > div >figure > img {
+    width: 90%;
+    animation: scale 2s infinite;
+}
+
+strong {
+	display:inline-block;
+    animation: scale-strong 2s infinite;
+}
+
+
+@keyframes scale {
+   	0% {
+        transform: scale(0.25);
+    }
+	25% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0.7);
+    }
+	70% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes scale-strong {
+   	0% {
+        transform: scale(1.1);
+    }
+	25% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+	70% {
+        transform: scale(1.15);
+    }
+}
+.container__benift > div > p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.container__benift > div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.rectangle {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background: #04be4f;
+}
+
+.rectangle > h5 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.contact > h6 {
+    font-size: 1.8rem;
+    text-align: end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.contact > p {
+    font-size: 1.8rem;
+    text-align: end;
+    margin-right: 10px;
+}
+
+span {
+    animation: text-color 0.5s infinite  linear;
+}
+
+@keyframes text-color {
+    0% {
+        color: #fd0707;
+    }
+	20% {
+        color: #fffff;
+    }
+    50% {
+        color: #0d7df4;
+    }
+	70% {
+		
+		color: #fd0707;
+	}
+	100% {
+        color: #061a84;
+    }
+
+}
+

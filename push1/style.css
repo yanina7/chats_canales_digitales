@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 150vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 630px;
+    min-height: 630px;
+    max-height: 630px;
+    border: 10px solid #000;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.one {
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    height: 30px;
+    max-height: 30px;
+    min-inline-size: 30px;
+    background: #000;
+    margin: 0 auto;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.one_1 {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 8px;
+    min-height: 8px;
+    border-radius: 12px;
+    background: #808080;
+}
+
+.one__2 {
+    width: 8px;
+    max-width: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    max-height: 8px;
+    border-radius: 100%;
+    background: #808080;
+}
+
+.screen {
+    width: 100%;
+    min-height: 610px;
+    max-height: 610px;
+    position: absolute;
+    border-radius: 14px;
+    top: 0;
+    background-color: #fff;
+}
+
+.time {
+    width: 100%;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    background: #dfe0e2;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.time div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.time div > i {
+    rotate: -90deg;
+}
+
+.icons {
+    background: #dfe0e2;
+    padding: 15px 0;
+}
+
+.container__icons {
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img {
+    width: 25px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+.notefication {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+.notefication img {
+    width: 25px;
+}
+/* //////////////////////////////////////////// */
+.notificacion {
+    padding: 0 2px;
+    border-radius: 6px;
+    margin: 0 5px 0;
+    background-image: linear-gradient(
+  350deg,
+  hsl(304deg 100% 20%) 0%,
+  hsl(305deg 100% 25%) 15%,
+  hsl(305deg 100% 30%) 21%,
+  hsl(306deg 100% 34%) 26%,
+  hsl(306deg 100% 37%) 30%,
+  hsl(306deg 100% 40%) 33%,
+  hsl(306deg 100% 43%) 37%,
+  hsl(303deg 100% 42%) 40%,
+  hsl(300deg 100% 41%) 43%,
+  hsl(296deg 100% 42%) 46%,
+  hsl(293deg 100% 43%) 49%,
+  hsl(290deg 100% 44%) 52%,
+  hsl(287deg 100% 45%) 55%,
+  hsl(286deg 100% 44%) 59%,
+  hsl(285deg 100% 43%) 62%,
+  hsl(284deg 100% 42%) 65%,
+  hsl(283deg 100% 41%) 68%,
+  hsl(282deg 100% 41%) 72%,
+  hsl(281deg 100% 40%) 75%,
+  hsl(281deg 98% 39%) 79%,
+  hsl(282deg 98% 38%) 83%,
+  hsl(282deg 97% 37%) 87%,
+  hsl(283deg 96% 36%) 91%,
+  hsl(283deg 96% 34%) 95%,
+  hsl(284deg 95% 33%) 100%
+);
+animation-name: deslizar;
+animation-duration: 1s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes deslizar {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(60px);
+    }
+}
+
+.minut {
+    text-align: end;
+    font-size: 1.4rem;
+    color: #e9e5e3;
+}
+
+.notificacion__info {
+    display: flex;
+    gap: 5px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 5px 2px;
+}
+
+.container_apps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 225px;
+}
+
+.container_apps > img {
+    width: 50px;
+}
+
+.three {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.color_green{
+   color:#898b8a;
+}
+
+.img_icon{
+   width: 5rem;
+   height: 7vh;
+   border-radius: 1rem;
+	
+}
+
+.three > img {
+    width: 25px;
+}

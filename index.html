@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41e86e3762.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style-bank.css">
+    <link rel="stylesheet" href="css-main.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--begin-->
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+            ▼ CANAL  + 
+        </button>
+        <div class="dropdown-content">
+            <a href="index.html">html1</a>
+            <a href="html2/index.html">html2</a>
+            <a href="html3/index.html">html3</a>
+            <a href="html4/index.html">html4</a>
+            <a href="html5/index.html">html5</a>
+            <a href="html6/index.html">html6</a>
+            <a href="push1/index.html">push1</a>
+            <a href="push2/index.html">push2</a>
+            <a href="sms1/index.html">sms1</a>
+            <a href="sms2/index.html">sms2</a>
+        </div>
+    </div>
+    <!--end--> 
+    <main>
+       
+        <div class="home">
+            <div class="one">
+                <div class="one_1"></div>
+                <div class="one__2"></div>
+            </div>
+            <div class="screen">
+                <div class="time">
+                    <p>claro</p>
+                    <div>
+                        <i class="fa-solid fa-battery-three-quarters"></i>
+                        <p>17:11</p>
+                    </div>
+                </div>
+                <header class="header">
+                    <img class="logo" src="icons/Interbank_logo_2019_con_fondo.png" alt="">
+                </header>
+                <section class="hero">
+                    <h1 class="hero__title">Es importante<br> <span class="hero__title--mod">que sepas...</span></h1>
+                    <img src="icons/smartphone-email-svgrepo-com.svg" alt="">
+                </section>
+                <section class="info__container">
+                    <div>
+                        <p class="info__user">
+                            <span class="info__user--mod"><strong>Roberto</strong></span>, tenemos información importante sobre tu <span class="info__user--mod"><strong>reclamo</strong></span>
+                        </p>
+                        <p class="info">
+                            Resolveremos tu <span class="info--mod"><strong>reclamo</strong></span> con N° DE Ticket <span
+                                class="info--mod"><strong>00451</strong></span> por el motivo de <span class="info--mod"><strong>cobros indebidos</strong></span> a
+                            más tardar el <span class="info--mod"><strong>10/05/2023</strong></span>
+                        </p>
+                    </div>
+                    <div class="status">
+                        <p class="status__title">
+                            Nos comunicaremos contigo en los próximos días.<br>
+                            <span class="">Conoce su estado aquí:</span>
+                        </p>
+                        <div class="status__container">
+                            <div class="conatiner--mod1">
+                                <img class="status__img" src="images/celular.gif" alt="img">
+                                <div class="lines">
+                                    <div class="circle circle--mod1"></div>
+                                    <span>----</span>
+                                </div>
+                                <p class="title--mod-1">Ingreso de ticket</p>
+                            </div>
+                            <div class="conatiner--mod2">
+                                <img class="status__img" src="images/calendario.gif" alt="img">
+                                <div class="lines">
+                                    <span>---</span>
+                                    <div class="circle"></div>
+                                    <span>---</span>
+                                </div>
+                                <p class="title--mod-1">Validación de fecha propuesta</p>
+                            </div>
+                            <div class="conatiner--mod2">
+                                <img class="status__img" src="images/lupa.gif" alt="img">
+                                <div class="lines">
+                                    <span>---</span>
+                                    <div class="circle circle--col"></div>
+                                    <span>----</span>
+                                </div>
+                                <p class="title--mod-2">Revisión</p>
+                            </div>
+                            <div class="conatiner--mod1">
+                                <img class="status__img" src="images/campana.gif" alt="img">
+                                <div class="lines">
+                                    <span>----</span>
+                                    <div class="circle circle--mod2 circle--col"></div>
+                                </div>
+                                <p class="title--mod-2">Finalizado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="consultas">
+                        <p class="text">
+                            Conoce el estado de nuestro <a class="link__whatsapp" href="#">Whatsapp</a> o en <a
+                                class="link__web" href="#">www.interbank.pe</a>
+                        </p>
+                        <img class="img__animation" src="images/figure.jpeg" alt="figure">
+                    </section>
+
+                </section>
+          </div>
+        </div>
+        <!--BEGIN-->
+            <section class="Chatbot__home hidden">
+                <div class="header2">
+                    <div>
+                        <img class="user__bot" src="./imgs/bot.png" alt="loygo">
+                        <p class="user__name">Chatbot</p>
+                    </div>
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </div>
+    
+                <div class="screen2">
+                    <p id="fecha__actual" class="month"></p>
+                </div>  
+
+                <div class="sms">
+                    <input id="textvalor" type="text" placeholder="Mensaje">
+                    <button id="btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+    
+            </section>
+            <img id="btn__img" class="icon__bot" src="./imgs/chatbot.png" alt="icono de bot">
+    <!--END-->    
+    </main>
+    <script src="index.js"></script>
+    <script src="indexmainchat.js"></script>
+</body>
+
+</html>

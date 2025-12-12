@@ -1,0 +1,56 @@
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón que activa el dropdown */
+.dropdown-toggle {
+    background: #05be50;
+    border: none;
+    color: white;
+    padding: 7px 1px;
+    cursor: pointer;
+    font-size: 12.5px;
+    margin-left: 0.05rem;
+}
+
+/* Contenido del dropdown (oculto por defecto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto blur */
+    min-width: 18px;
+    border-radius: 8px;
+    padding: 5px 0;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Links dentro del dropdown */
+.dropdown-content a {
+    color: white;
+    background-color: #05be50;
+    visibility: 45%;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease ;
+    border: 1px; /* Sin líneas */
+}
+
+/* Hover en los links */
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color:#05be50;
+}
+
+/* Mostrar dropdown al hacer hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: rgba(255, 255, 255, 0.1);
+}

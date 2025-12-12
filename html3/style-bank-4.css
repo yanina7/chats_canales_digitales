@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 150vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 630px;
+    min-height: 630px;
+    max-height: 630px;
+    border: 10px solid #000;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.one {
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    height: 30px;
+    max-height: 30px;
+    min-inline-size: 30px;
+    background: #000;
+    margin: 0 auto;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.one_1 {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 8px;
+    min-height: 8px;
+    border-radius: 12px;
+    background: #808080;
+}
+
+.one__2 {
+    width: 8px;
+    max-width: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    max-height: 8px;
+    border-radius: 100%;
+    background: #808080;
+}
+
+.screen {
+    width: 100%;
+    min-height: 610px;
+    max-height: 610px;
+    position: absolute;
+    border-radius: 14px;
+    top: 0;
+    background-color: #fff;
+}
+
+.screen::-webkit-scrollbar {
+    width: 0;
+}
+
+.time {
+    width: 100%;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    background: #fff;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.time div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.time div > i {
+    rotate: -90deg;
+}
+
+.three {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.three > img {
+    width: 25px;
+}
+
+.sccren__home {
+    margin: 0 auto;
+    width: 100%;
+    height: 535px;
+    overflow-y: scroll;
+}
+
+.sccren__home::-webkit-scrollbar {
+    width: 0;
+}
+
+.logo {
+    width: 130px;
+}
+
+.section__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.hero {
+    height: 50vh;
+    background: url(images/background.png);
+    background-size: cover;
+    padding-top: 15px;
+}
+
+.hero__title  {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.hero__title span {
+    color: #02ff67;
+}
+
+.info {
+    width: 91%;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+}
+
+.info__title {
+    color: #0036a5;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.info__title span {
+    color: #02ff67;
+}
+
+.info > p {
+    color: #0036a5;
+    font-size: 1.55rem;
+}
+
+.info > button {
+    margin-top: 14px;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    background: #eb0043;
+    font-size: 1.8rem;
+	position: absolute;
+    top: 17rem;
+}
+
+.info > button:hover {
+    cursor: pointer;
+	
+}
+
+.info > button {
+    animation: girar 10s infinite;
+}
+
+@keyframes girar {
+	
+	0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+	
+	
+}
+.hero__title span {
+    animation: text-color 1s infinite  linear;
+}
+
+.info__title span {
+    animation: text-color-money 2s infinite  linear;
+}
+
+@keyframes text-color {
+
+	0% {
+     color: #f0f632;
+    }
+    50% {
+     color: #6df2e6;
+    }
+	70% {
+     color: #f5de24;
+    }
+    100% {
+    color: #eca2a2e8;
+    }
+}
+
+@keyframes text-color-money {
+
+	0% {
+     color: #236f07;
+    }
+    50% {
+     color: #f70606;
+    }
+    100% {
+     color: #79bd26;
+   }
+}
+
+

@@ -44,7 +44,7 @@ function templateBot(nombrePlatillos) {
     let template1 = [
         "Aquí tienes los canales digitales",
         "para campañas contextuales",
-        "Por favor elige un número:"
+        "Por favor escribe uno de los números"
     ]
 
     p.textContent = template1[0]

@@ -1,0 +1,1 @@
+Después de procesar volumenes de datos el objetivo es brindar por medio de códigos de campañas contextuales y  core de negocio campañas personalizadas a los millones de usuarios digitales y no digitales que hacen uso de dispositivos por SMS, PUSH y HTML(correo)
